@@ -1,28 +1,21 @@
-/* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-/* THIS IS ALL meant for editing. You might want to do it differently, 
-name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
-
-/* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color:#2C3A40;
+  --link-color: #A64C44;
+  --link-hover-color: #F2B29B;
+  --color-4: #6D80A6;
+  --color-5: #1A1E26;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --primary-font: "Odibee Sans", sans-serif;
+  --secondary-font: "Roboto", serif;
+  --main-text-color: #1A1E26;
 
   --white-space: 1rem;
 }
@@ -35,7 +28,7 @@ a {
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.2);
 }
 
 button:active {
@@ -44,7 +37,7 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 html {
   font-size: 100%;
@@ -106,7 +99,7 @@ section {
 .section-heading {
   font-style: italic;
   font-size: 1.3rem;
-  color: #777;
+  color: #2C3A40;
   margin: 0.5rem 0;
 }
 
@@ -150,23 +143,6 @@ ul li:last-child {
   width: 40%;
   margin-right: 5vw;
 }
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
-
 .images ul {
   flex-direction: column;
   text-align: center;
@@ -174,7 +150,6 @@ ul li:last-child {
 
 .images li {
   display: block;
-  /*margin-right: 5vw;*/
   margin-bottom: 1rem;
 }
 
@@ -188,7 +163,6 @@ button {
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
@@ -223,6 +197,7 @@ button:focus-within {
 p.typography-sample {
   font-family: var(--secondary-font);
   line-height: 1.5;
+  font-size: 1rem;
   max-width: 960px;
 }
 
@@ -237,7 +212,8 @@ em {
 a {
   font-family: var(--primary-font);
   color: var(--link-color);
-  font-weight: bold;
+  font-weight: medium;
+  font-size: 2rem;
   text-decoration: none;
   transition: all 0.2s;
 }
